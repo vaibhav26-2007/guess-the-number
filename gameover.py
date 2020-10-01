@@ -1,3 +1,8 @@
+def speak(str):
+    from win32com.client import Dispatch
+    speak=Dispatch("SAPI.spVoice")
+    speak.Speak(str)
+
 import random
 lst = [75]
 c = random.choice(lst)
